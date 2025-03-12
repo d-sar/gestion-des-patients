@@ -21,11 +21,18 @@ public class GestionDesPatientsApplication implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         patientRepository.save(new Patient(null,"ahmed","23/02",true,2));
+        patientRepository.save(new Patient(null,"SARA","3/02",true,2));
+        patientRepository.save(new Patient(null,"AAAm","23/02",false,5));
         List<Patient> patients = patientRepository.findAll();
         patients.forEach(p ->{
             System.out.println(p.toString());
-        } );
-        Patient p1 = patientRepository.findById(Long.valueOf(1).get());
-        System.out.println(p1.toString());
+                }
+                );
+        Patient p1 = patientRepository.findById(2L).orElse(null);
+
+        System.out.println("$$$$$$$$$$$$");
+        System.out.println(p1.getId_patient());
+        System.out.println(p1.getNom_patient());
+
     }
 }
