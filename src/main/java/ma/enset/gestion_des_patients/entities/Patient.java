@@ -5,21 +5,19 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.*;
+import lombok.AllArgsConstructor;
 
-@Data
+
 @Entity
-@Getter
-@Setter
-@NoArgsConstructor
+@Data
 @AllArgsConstructor
+@NoArgsConstructor
 @Builder
 public class Patient {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id_patient;
-    private String nom_patient;
-    private String dateNaissance_patient;
+    private Long id;
+    private String nom;
+    private String dateNaissance;
     private Boolean malade ;
-    private int score_patient;
-
-
+    private int score;
 }
