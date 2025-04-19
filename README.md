@@ -29,7 +29,7 @@ L’application utilise **Spring Data JPA** pour interagir avec la base de donn�
 
 - 🗃️ Afficher tous les patients
 
-##🧪 Configuration (exemple avec H2 en mémoire)
+## 🧪 Configuration (exemple avec H2 en mémoire)
   ```bash
         spring.application.name=patient
         server.port=8085
