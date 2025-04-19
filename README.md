@@ -33,5 +33,5 @@ Lâ€™application utilise **Spring Data JPA** pour interagir avec la base de donnÃ
   ```bash
         spring.application.name=patient
         server.port=8085
-        spring.datasource.url = jdbc:h2:mem:parcinfo-db
+        spring.datasource.url = jdbc:h2:mem:patients-db
         spring.h2.console.enabled=true
