@@ -31,7 +31,6 @@ L’application utilise **Spring Data JPA** pour interagir avec la base de donn�
 
 ##🧪 Configuration (exemple avec H2 en mémoire)
   ```bash
-        base de donne H2 -> localhost:8085/hé-console
         spring.application.name=patient
         server.port=8085
         spring.datasource.url = jdbc:h2:mem:parcinfo-db
